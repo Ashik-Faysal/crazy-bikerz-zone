@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biker Zone</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./styles/style.csstyle.css" />
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/d259d4a78e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="container-lg">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light py-5">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Biker Zone</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bikes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Discount</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+            <button class="btn btn-outline-success ms-5" type="submit">
+              LogIn
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- header slider  -->
+      <div
+        id="carouselExample"
+        class="carousel slide p-5 bg-danger bg-opacity-10 rounded"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div
+                class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h1 class="fw-bolder">
+                    Ride-on R15 V4 with <span class="text-warning">Smile</span>
+                  </h1>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit mollit
+                  </p>
+                  <button class="btn btn-light bg-warning">Purchase</button>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <img
+                  src="./images/bike-1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div
+                class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h1 class="fw-bolder">
+                    Ride-on R15 V4 with <span class="text-warning">Smile</span>
+                  </h1>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit mollit
+                  </p>
+                  <button class="btn btn-light bg-warning">Purchase</button>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <img
+                  src="./images/bike-2.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div
+                class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h1 class="fw-bolder">
+                    Ride-on R15 V4 with <span class="text-warning">Smile</span>
+                  </h1>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit mollit
+                  </p>
+                  <button class="btn btn-light bg-warning">Purchase</button>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <img
+                  src="./images/bike-3.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon my-bike-light-red"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon my-bike-light-red"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <main class="mt-5">
+      <!-- ----------- Hot bikes section------- -->
+      <section class="text-start text-md-center py-5">
+        <h1>Hot Bikes In This Year</h1>
+        <p class="text-danger">Best bike collection</p>
+        <hr class="w-25 mx-md-auto border-danger" />
+        <div
+          class="container-fluid row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 mt-3 px-5"
+        >
+          <div class="col">
+            <img class="w-100" src="./images/feature-bike.jpg" alt="" />
+          </div>
+          <div class="col">
+            <img class="w-75" src="./images/feature-bike.jpg" alt="" />
+          </div>
+          <div class="col">
+            <img class="w-100" src="./images/feature-bike.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------------
+                       new arrival section------- -->
+
+      <section class="bg-info bg-opacity-25 rounded py-5 px-3">
+        <h1 class="text-center mt-5">New Arrival</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 rounded-4">
+              <img src="./images/bike-5.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-outline-danger">Perchese</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 rounded-4">
+              <img src="./images/bike-6.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-outline-danger">Perchese</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 rounded-4">
+              <img src="./images/bike-8.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer
+                  content than the first to show that equal height action.
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-outline-danger">Perchese</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----happy clients---- -->
+      <section class="my-5 text-center">
+        <h1 class="py-5">Happy Clients</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/user-1.png"
+                class="card-img-top mt-3 w-25 mx-auto"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="text-warning">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <h5 class="text-primary">Micheal Jakson</h5>
+                <p>New Jersy, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/user-2.png"
+                class="card-img-top mt-3 w-25 mx-auto"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Slate helps you see how many more days you need to work to
+                  reach your financial goal for the month and year.
+                </p>
+                <p class="text-warning">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <h5>Sakira</h5>
+                <p>colombian singer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/user-3.png"
+                class="card-img-top mt-3 w-25 mx-auto"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Slate helps you see how many more days you need to work to
+                  reach your financial goal for the month and year
+                </p>
+                <p class="text-warning">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <h5>Helena thu</h5>
+                <p>New York</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Ask section  -->
+      <section my-5>
+        <h1 class="text-center">
+          Frequently Asked <span class="text-danger fw-bolder">Questions</span>
+        </h1>
+        <div class="row">
+          <div class="col-md-6 px-5">
+            <img src="./images/faq.png" alt="" />
+          </div>
+          <div class="col-md-6 px-5 pt-5">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    What are the most important things I should know about
+                    riding a bike?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Safety First! Always obey the rules of the road. Obey all
+                    traffic signals, signs, and laws. Get in the mindset of
+                    “driving” your bike—not just “riding” your bike. This will
+                    help you be a more focused and legally compliant bike rider.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    How can I tell if my helmet is old and I need a new one?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Most helmets have a production date listed inside on a
+                    sticker, making it easy to identify exactly how old your
+                    helmet is. If the sticker is worn off or can't be found,
+                    then it is probably safe to assume it is time to replace it.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    My bike has been in storage is it safe to ride?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Depending upon the time period for which the bike was not in
+                    use and the prevailing weather conditions at that time, the
+                    bike can rust. Rusting is a big problem when it comes to a
+                    bike, especially the fuel tank, engine, etc. Rusting is not
+                    only superficial; it can happen on the inside as well.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    What rules should I follow when riding my bike?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Ride single-file in the direction of traffic. Remain alert,
+                    keep your head up and look around; watch for opening car
+                    doors and other hazards. Use hand signals when turning and
+                    use extra care at intersections. Never hitch onto cars.
+                    Before entering traffic, stop and look left, right, left
+                    again and over your shoulder.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="w-100 bg-dark p-5">
+      <div class="row d-flex justify-content-between">
+        <div class="col-md-8 text-white text-center">
+          <p>
+            <button class="btn text-white">Download Now</button>
+            <button class="btn text-white">License</button>
+          </p>
+          <ul class="d-md-flex justify-content-between">
+            <li class="list-group-item">About</li>
+            <li class="list-group-item">Feature</li>
+            <li class="list-group-item">Pricing</li>
+            <li class="list-group-item">Careeers</li>
+            <li class="list-group-item">Help</li>
+            <li class="list-group-item">Privacy Policy</li>
+          </ul>
+          <p class="p-3">&copy; 2020 bike. All rights reserved</p>
+        </div>
+        <div class="col-md-4 text-white text-center pe-2">
+          <h6>Get The App</h6>
+          <div>
+            <img class="my-2 img-fluid" src="./images/ios.png" alt="" />
+          </div>
+          <div>
+            <img class="img-fluid" src="./images/android.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+ <!-- Js file  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script></script>
+  </body>
+</html>
